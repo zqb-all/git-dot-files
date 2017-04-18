@@ -1,0 +1,44 @@
+------------------------------------------------------------
+/usr/bin/pip3 run on Mon Apr 17 20:00:45 2017
+Obtaining file:///media/zhuangqiubin/zqb/mywork/mygithub/gitsome
+  Running setup.py (path:/media/zhuangqiubin/zqb/mywork/mygithub/gitsome/setup.py) egg_info for package from file:///media/zhuangqiubin/zqb/mywork/mygithub/gitsome
+    
+    running egg_info
+    writing requirements to gitsome.egg-info/requires.txt
+    writing gitsome.egg-info/PKG-INFO
+    writing dependency_links to gitsome.egg-info/dependency_links.txt
+    writing entry points to gitsome.egg-info/entry_points.txt
+    writing top-level names to gitsome.egg-info/top_level.txt
+    warning: manifest_maker: standard file '-c' not found
+    
+    reading manifest file 'gitsome.egg-info/SOURCES.txt'
+    writing manifest file 'gitsome.egg-info/SOURCES.txt'
+Requirement already satisfied (use --upgrade to upgrade): numpydoc>=0.5,<1.0 in /usr/local/lib/python3.4/dist-packages (from gitsome==0.7.0)
+Downloading/unpacking ply>=3.4,<4.0 (from gitsome==0.7.0)
+  Getting page https://mirrors.aliyun.com/pypi/simples/ply/
+  Could not fetch URL https://mirrors.aliyun.com/pypi/simples/ply/: 404 Client Error: Not Found
+  Will skip URL https://mirrors.aliyun.com/pypi/simples/ply/ when looking for download links for ply>=3.4,<4.0 (from gitsome==0.7.0)
+  Getting page https://mirrors.aliyun.com/pypi/simples/
+  Could not fetch URL https://mirrors.aliyun.com/pypi/simples/: 404 Client Error: Not Found
+  Will skip URL https://mirrors.aliyun.com/pypi/simples/ when looking for download links for ply>=3.4,<4.0 (from gitsome==0.7.0)
+  Cannot fetch index base URL https://mirrors.aliyun.com/pypi/simples/
+  URLs to search for versions for ply>=3.4,<4.0 (from gitsome==0.7.0):
+  * https://mirrors.aliyun.com/pypi/simples/ply/
+  Getting page https://mirrors.aliyun.com/pypi/simples/ply/
+  Could not fetch URL https://mirrors.aliyun.com/pypi/simples/ply/: 404 Client Error: Not Found
+  Will skip URL https://mirrors.aliyun.com/pypi/simples/ply/ when looking for download links for ply>=3.4,<4.0 (from gitsome==0.7.0)
+  Could not find any downloads that satisfy the requirement ply>=3.4,<4.0 (from gitsome==0.7.0)
+Cleaning up...
+  Removing temporary dir /tmp/pip_build_root...
+No distributions at all found for ply>=3.4,<4.0 (from gitsome==0.7.0)
+Exception information:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/usr/lib/python3/dist-packages/pip/commands/install.py", line 278, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/usr/lib/python3/dist-packages/pip/req.py", line 1178, in prepare_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/usr/lib/python3/dist-packages/pip/index.py", line 277, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+pip.exceptions.DistributionNotFound: No distributions at all found for ply>=3.4,<4.0 (from gitsome==0.7.0)

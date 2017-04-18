@@ -1,0 +1,1 @@
+/home/zhuangqiubin/.vim/vimrc
