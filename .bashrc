@@ -138,3 +138,5 @@ alias cao='echo sudo $(history -p !!) && sudo $(history -p !!)'
 alias sb=cao
 
 . /usr/share/autojump/autojump.sh
+
+. ~/.autosource_for_tina.sh
