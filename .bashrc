@@ -136,7 +136,10 @@ alias opendir='nautilus'
 
 alias cao='echo sudo $(history -p !!) && sudo $(history -p !!)'
 alias sb=cao
+#alias cloneguake='tablabel=`guake -l` && guake -n `pwd` && guake -r $tablabel'
+alias cloneguake='tablabel=`guake -l` && tabpath=`pwd` && guake -n 1 && guake -e "cd $tabpath" && guake -r $tablabel'
 
 . /usr/share/autojump/autojump.sh
 
 . ~/.autosource_for_tina.sh
+. ~/.autoex.sh
