@@ -128,9 +128,9 @@ export PATH=/media/zhuangqiubin/zqb/mywork/gcc-arm-none-eabi-5_4-2016q2/bin:$PAT
 
 
 #the fuck
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
 # You can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias FUCK)
+#eval $(thefuck --alias FUCK)
 
 alias opendir='nautilus'
 
@@ -139,7 +139,18 @@ alias sb=cao
 #alias cloneguake='tablabel=`guake -l` && guake -n `pwd` && guake -r $tablabel'
 alias cloneguake='tablabel=`guake -l` && tabpath=`pwd` && guake -n 1 && guake -e "cd $tabpath" && guake -r $tablabel'
 
+alias b1='cd ..'
+alias b2='cd ../..'
+alias b3='cd ../../..'
+alias b4='cd ../../../..'
+alias b5='cd ../../../../..'
+alias mybc='smartbc'
+alias mycalc='smartbc'
+alias jisuan='smartbc'
+alias com='myminicom'
+alias openfile='xdg-open'
+alias dakai='xdg-open'
 . /usr/share/autojump/autojump.sh
 
-. ~/.autosource_for_tina.sh
+#. ~/.autosource_for_tina.sh
 . ~/.autoex.sh

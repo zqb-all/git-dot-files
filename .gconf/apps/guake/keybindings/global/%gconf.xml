@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="show_hide" mtime="1495340923" schema="/schemas/apps/guake/keybindings/global/show_hide" type="string">
+		<stringvalue>F8</stringvalue>
+	</entry>
+</gconf>
