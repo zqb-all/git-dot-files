@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="cursor_shape" mtime="1495700843" schema="/schemas/apps/guake/style/cursor_shape" type="int" value="0"/>
-	<entry name="cursor_blink_mode" mtime="1495700843" schema="/schemas/apps/guake/style/cursor_blink_mode" type="int" value="0"/>
+	<entry name="cursor_shape" mtime="1496738586" schema="/schemas/apps/guake/style/cursor_shape" type="int" value="0"/>
+	<entry name="cursor_blink_mode" mtime="1496738586" schema="/schemas/apps/guake/style/cursor_blink_mode" type="int" value="0"/>
 </gconf>
