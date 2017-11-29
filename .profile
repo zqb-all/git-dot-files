@@ -22,3 +22,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 export RPI_TOOLCHAIN_DIR=/home/zhuangqiubin/mywork/px4/
 export MR100_TOOLCHAIN_DIR=/home/zhuangqiubin/mywork/px4/
+
+
+source ~/.xsh
+

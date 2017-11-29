@@ -7,7 +7,7 @@ case $- in
     *i*) ;;
       *) return;;
 esac
-
+EDITOR=vim
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -115,6 +115,7 @@ fi
 
 alias fanyi='~/mywork/mzfanyi/src/mzfanyi.py'
 alias fy='~/mywork/mzfanyi/src/mzfanyi.py'
+alias 翻译='~/mywork/mzfanyi/src/mzfanyi.py'
 
 #if [ "$TERM" == "xterm" ]; then
 	export TERM=xterm-256color
@@ -146,11 +147,18 @@ alias b4='cd ../../../..'
 alias b5='cd ../../../../..'
 alias mybc='smartbc'
 alias mycalc='smartbc'
-alias jisuan='smartbc'
+#alias jisuan='smartbc'
+alias jisuan='pycalc.py'
 alias com='myminicom'
 alias openfile='xdg-open'
 alias dakai='xdg-open'
+alias 打开='xdg-open'
 . /usr/share/autojump/autojump.sh
 
 #. ~/.autosource_for_tina.sh
 . ~/.autoex.sh
+. ~/cdirs/cdirs.sh
+. ~/.mygrep.sh
+
+source ~/.xsh
+
