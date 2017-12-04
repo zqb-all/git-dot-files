@@ -153,6 +153,9 @@ alias com='myminicom'
 alias openfile='xdg-open'
 alias dakai='xdg-open'
 alias 打开='xdg-open'
+alias tmux='tmux -2'
+
+
 . /usr/share/autojump/autojump.sh
 
 #. ~/.autosource_for_tina.sh
@@ -161,4 +164,14 @@ alias 打开='xdg-open'
 . ~/.mygrep.sh
 
 source ~/.xsh
+
+for ttyi in 1 2 3 4 5 6
+do
+ if [ "$(tty)" = "/dev/tty$ttyi" ]; then
+  export LC_ALL="en_US.UTF-8"
+  export LANGUAGE="en_US.UTF-8"
+  export LANG="en_US.UTF-8"
+ fi
+done
+
 
