@@ -149,7 +149,6 @@ alias mybc='smartbc'
 alias mycalc='smartbc'
 #alias jisuan='smartbc'
 alias jisuan='pycalc.py'
-alias com='myminicom'
 alias openfile='xdg-open'
 alias dakai='xdg-open'
 alias 打开='xdg-open'
@@ -162,6 +161,7 @@ alias tmux='tmux -2'
 . ~/.autoex.sh
 . ~/cdirs/cdirs.sh
 . ~/.mygrep.sh
+. ~/.myminicom.sh
 
 source ~/.xsh
 
