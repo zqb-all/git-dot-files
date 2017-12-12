@@ -113,19 +113,19 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias fanyi='~/mywork/mzfanyi/src/mzfanyi.py'
-alias fy='~/mywork/mzfanyi/src/mzfanyi.py'
-alias 翻译='~/mywork/mzfanyi/src/mzfanyi.py'
+alias fanyi='~/.mzfanyi.py'
+alias fy='~/.mzfanyi.py'
+alias 翻译='~/.mzfanyi.py'
 
 #if [ "$TERM" == "xterm" ]; then
 	export TERM=xterm-256color
 #fi
 
-export PATH=$PATH:$HOME/mywork/jsbsim/src
-export PATH=$PATH:$HOME/mywork/ardupilot/Tools/autotest
-export PATH=/usr/lib/ccache:$PATH
+# export PATH=$PATH:$HOME/mywork/jsbsim/src
+# export PATH=$PATH:$HOME/mywork/ardupilot/Tools/autotest
+# export PATH=/usr/lib/ccache:$PATH
 
-export PATH=/media/zhuangqiubin/zqb/mywork/gcc-arm-none-eabi-5_4-2016q2/bin:$PATH
+# export PATH=/media/zhuangqiubin/zqb/mywork/gcc-arm-none-eabi-5_4-2016q2/bin:$PATH
 
 
 #the fuck
@@ -145,10 +145,10 @@ alias b2='cd ../..'
 alias b3='cd ../../..'
 alias b4='cd ../../../..'
 alias b5='cd ../../../../..'
-alias mybc='smartbc'
-alias mycalc='smartbc'
+alias mybc='~/.smartbc.sh'
+alias mycalc='~/.smartbc.sh'
 #alias jisuan='smartbc'
-alias jisuan='pycalc.py'
+alias jisuan='~/.pycalc.py'
 alias openfile='xdg-open'
 alias dakai='xdg-open'
 alias 打开='xdg-open'
