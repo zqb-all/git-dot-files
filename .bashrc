@@ -126,6 +126,7 @@ alias 翻译='~/.mzfanyi.py'
 # export PATH=/usr/lib/ccache:$PATH
 
 # export PATH=/media/zhuangqiubin/zqb/mywork/gcc-arm-none-eabi-5_4-2016q2/bin:$PATH
+export PATH=$PATH:$HOME/Bin/phoenixsuit/bin/
 
 
 #the fuck
@@ -153,7 +154,8 @@ alias openfile='xdg-open'
 alias dakai='xdg-open'
 alias 打开='xdg-open'
 alias tmux='tmux -2'
-
+alias vim="/home/zhuangqiubin/usr/bin/vim"
+alias phoenixsuit="/home/zhuangqiubin/Bin/phoenixsuit/phoenixsuit"
 
 . /usr/share/autojump/autojump.sh
 
@@ -162,6 +164,7 @@ alias tmux='tmux -2'
 . ~/cdirs/cdirs.sh
 . ~/.mygrep.sh
 . ~/.myminicom.sh
+. ~/.tina.sh
 
 source ~/.xsh
 
@@ -175,3 +178,6 @@ do
 done
 
 
+
+export NVM_DIR="/home/zhuangqiubin/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

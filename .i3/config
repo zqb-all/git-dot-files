@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -126,9 +126,7 @@ bindsym $mod+Shift+Tab workspace prev
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3) bindsym $mod+Shift+r restart # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
@@ -165,8 +163,8 @@ mode "$systemctl" {
     bindsym e exec i3-msg exit; mode "default"
     bindsym l exec i3lock -i "$HOME/.i3/lock.png"; mode "default"
     bindsym Shift+l exec i3lock -i "$HOME/.i3/lock.png" -d; mode "default"
-    bindsym r exec systemctl reboot; mode "default"
-    bindsym p exec systemctl poweroff; mode "default"
+    bindsym r exec shutdown -r now; mode "default"
+    bindsym p exec shutdown -h now; mode "default"
 
     # Esc or Return to normal mode
     bindsym Escape mode "default"
@@ -199,6 +197,7 @@ mode "$volume" {
 bindsym $mod+q exec rofi -show run
 bindsym $mod+Shift+q exec --no-startup-id "rofi -show run -run-command 'gksudo {cmd}'"
 bindsym $mod+w exec rofi -show window
+bindsym $mod+n exec nautilus
 
 # switch between the current and the previously focused one
 bindsym $mod+b workspace back_and_forth
@@ -211,6 +210,11 @@ exec --no-startup-id compton
 exec --no-startup-id feh --bg-scale "$HOME/.i3/lock.png"
 exec --no-startup-id nm-applet
 exec --no-startup-id thunderbird
+exec --no-startup-id guake
+exec --no-startup-id /opt/Spark/Spark
+exec --no-startup-id firefox
+assign [class="Firefox"] 2
+assign [class="Nautilus"] 4
 
 for_window [class="Main.py"] floating enable  border normal
 

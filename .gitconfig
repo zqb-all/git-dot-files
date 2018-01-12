@@ -7,15 +7,15 @@
 	status = auto
 	branch = auto
 [core]
-    editor=vim
+	editor=vim
 	autocrlf = input
 [credential]
 	helper = store
 [alias]
-    df = diff --ignore-space-at-eol
-    fp = format-patch --ignore-space-at-eol -M -C
-    fpb = "!f(){ git format-patch --ignore-space-at-eol -M -C --subject-prefix="PATCH][$(basename $PWD)/$(basename $(git config --get branch.$(basename $(cat .git/HEAD|awk '{print $2}')).merge))" ${*};};f"
-    st = status
+	df = diff --ignore-space-at-eol
+	fp = format-patch --ignore-space-at-eol -M -C
+	fpb = "!f(){ git format-patch --ignore-space-at-eol -M -C --subject-prefix="PATCH][$(basename $PWD)/$(basename $(git config --get branch.$(basename $(cat .git/HEAD|awk '{print $2}')).merge))" ${*};};f"
+	st = status
 	br = branch
 	ci = commit
 	last = log -1 HEAD
@@ -24,3 +24,9 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
 	default = matching
+
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.allwinnertech.com
+	smtpuser = zhuangqiubin@allwinnertech.com
+	smtpserverport = 25
