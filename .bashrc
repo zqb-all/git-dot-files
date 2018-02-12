@@ -127,6 +127,7 @@ alias 翻译='~/.mzfanyi.py'
 
 # export PATH=/media/zhuangqiubin/zqb/mywork/gcc-arm-none-eabi-5_4-2016q2/bin:$PATH
 export PATH=$PATH:$HOME/Bin/phoenixsuit/bin/
+export PATH=/usr/local/texlive/2017/bin/x86_64-linux:$PATH
 
 
 #the fuck
@@ -166,7 +167,7 @@ alias phoenixsuit="/home/zhuangqiubin/Bin/phoenixsuit/phoenixsuit"
 . ~/.myminicom.sh
 . ~/.tina.sh
 
-source ~/.xsh
+#source ~/.xsh
 
 for ttyi in 1 2 3 4 5 6
 do

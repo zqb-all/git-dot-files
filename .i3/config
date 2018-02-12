@@ -213,8 +213,8 @@ exec --no-startup-id thunderbird
 exec --no-startup-id guake
 exec --no-startup-id /opt/Spark/Spark
 exec --no-startup-id firefox
-assign [class="Firefox"] 2
-assign [class="Nautilus"] 4
+assign [class="Firefox"] 2: Web
+assign [class="Nautilus"] 4: Doc
 
 for_window [class="Main.py"] floating enable  border normal
 
