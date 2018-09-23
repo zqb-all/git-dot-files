@@ -3,12 +3,13 @@
 	name = zhuangqiubin
 [color]
 	ui = auto
-	diff = auto
-	status = auto
-	branch = auto
+#	diff = auto
+#	status = auto
+#	branch = auto
 [core]
 	editor=vim
-	autocrlf = input
+	pager = less -F -X
+	quotepath = false
 [credential]
 	helper = store
 [alias]

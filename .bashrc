@@ -128,6 +128,7 @@ alias 翻译='~/.mzfanyi.py'
 # export PATH=/media/zhuangqiubin/zqb/mywork/gcc-arm-none-eabi-5_4-2016q2/bin:$PATH
 export PATH=$PATH:$HOME/Bin/phoenixsuit/bin/
 export PATH=/usr/local/texlive/2017/bin/x86_64-linux:$PATH
+export PATH=$HOME/usr/bin/:$PATH
 
 
 #the fuck
@@ -165,6 +166,7 @@ alias phoenixsuit="/home/zhuangqiubin/Bin/phoenixsuit/phoenixsuit"
 . ~/cdirs/cdirs.sh
 . ~/.mygrep.sh
 . ~/.myminicom.sh
+. ~/.mykermit.sh
 . ~/.tina.sh
 
 #source ~/.xsh
@@ -182,3 +184,6 @@ done
 
 export NVM_DIR="/home/zhuangqiubin/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source /home/zhuangqiubin/demo/PathMarker/PathMarker_help.sh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
