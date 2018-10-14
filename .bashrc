@@ -121,6 +121,14 @@ alias 翻译='~/.mzfanyi.py'
 	export TERM=xterm-256color
 #fi
 
+#for cheat
+export PATH="$HOME/.local/bin:$PATH"
+export CHEATCOLOR=true
+export CHEAT_EDITOR=$HOME/usr/bin/vim
+[ -f ~/.cheat.bash ] && source ~/.cheat.bash
+
+export PATH="$HOME/usr/bin:$PATH"
+
 # export PATH=$PATH:$HOME/mywork/jsbsim/src
 # export PATH=$PATH:$HOME/mywork/ardupilot/Tools/autotest
 # export PATH=/usr/lib/ccache:$PATH
